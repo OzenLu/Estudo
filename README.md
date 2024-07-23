@@ -20,3 +20,5 @@ normalmente é escrito em letra maiuscula, como por exemplo: ![image](https://gi
 Classes e metodos também podem ter o modificador *final*.
 se uma classe tem o modificador *final* esta classe não poderá ter subclasses.
 se um método tem o modificador *final* este metodo não poderá ser sobrescrito.
+
+É redundante ter uma classe *final* com métodos *final*, afinal se você não consegue herdar uma classe, também não consegue sobrescrever os seus metodos.
