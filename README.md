@@ -12,7 +12,11 @@ Criando um objeto, o que acontece?
 Metodos static podem ser chamados dentro de um bloco de inicialização static
 
 
-Modificador Protected: atributos ou metodos que tiverem esse modificador, poderão ser acessados dentro do mesmo pacote ou por uma subclasse
+Modificador *protected*: atributos ou metodos que tiverem esse modificador, poderão ser acessados dentro do mesmo pacote ou por uma subclasse
 
-Modificador final: É uma constante, os atributos com o modificador final não poderão ser alterados, já que o seu objetivo é ser constante.
-normalmente é escrito em letra maiuscula ![image](https://github.com/user-attachments/assets/6a71ef63-b993-4987-bd8d-3b658bcec5a3)
+Modificador *final*: É uma constante, os atributos com o modificador *final* não poderão ser alterados, já que o seu objetivo é ser constante.
+normalmente é escrito em letra maiuscula, como por exemplo: ![image](https://github.com/user-attachments/assets/6a71ef63-b993-4987-bd8d-3b658bcec5a3)
+
+Classes e metodos também podem ter o modificador *final*.
+se uma classe tem o modificador *final* esta classe não poderá ter subclasses.
+se um método tem o modificador *final* este metodo não poderá ser sobrescrito.
