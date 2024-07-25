@@ -22,3 +22,17 @@ se uma classe tem o modificador *final* esta classe não poderá ter subclasses.
 se um método tem o modificador *final* este metodo não poderá ser sobrescrito.
 
 É redundante ter uma classe *final* com métodos *final*, afinal se você não consegue herdar uma classe, também não consegue sobrescrever os seus metodos.
+
+Enum é extremamente interessante. Criamos meio que 'opções' para serem seguidas, nelas podemos ter valores também. 
+caso adicionarmos um valor as opções do enum, é preciso explicitar o construtor também, com esses novos valores que eles precisarão ter.
+Na hora da criação do objeto, utilizando o enum como uma das opções contidas nele, não passamos como parametro nenhum valor para o construtor do enum, pois ele é privado.
+Enum parece trabalhar bem com funções abstratas.
+Criando o Enum;
+![image](https://github.com/user-attachments/assets/e257d71b-3675-4eeb-8931-90003366ee83)
+Utilizando o Enum como parametro na criação do objeto:
+![image](https://github.com/user-attachments/assets/9ff91c84-280c-443a-8e62-cc33a227429d)
+![image](https://github.com/user-attachments/assets/514b7061-4cb8-434d-83fe-bf331f6682b6)
+![image](https://github.com/user-attachments/assets/383e9882-7c70-4cd4-9e0f-c2f4a4fac5ca)
+
+
+
