@@ -23,7 +23,7 @@ se um método tem o modificador *final* este metodo não poderá ser sobrescrito
 
 É redundante ter uma classe *final* com métodos *final*, afinal se você não consegue herdar uma classe, também não consegue sobrescrever os seus metodos.
 
-Enum é extremamente interessante. Criamos meio que 'opções' para serem seguidas, nelas podemos ter valores também. 
+*Enum* é extremamente interessante. Criamos meio que 'opções' para serem seguidas, nelas podemos ter valores também. 
 caso adicionarmos um valor as opções do enum, é preciso explicitar o construtor também, com esses novos valores que eles precisarão ter.
 Na hora da criação do objeto, utilizando o enum como uma das opções contidas nele, não passamos como parametro nenhum valor para o construtor do enum, pois ele é privado.
 Enum parece trabalhar bem com funções abstratas.
@@ -34,5 +34,15 @@ Utilizando o Enum como parametro na criação do objeto:
 ![image](https://github.com/user-attachments/assets/514b7061-4cb8-434d-83fe-bf331f6682b6)
 ![image](https://github.com/user-attachments/assets/383e9882-7c70-4cd4-9e0f-c2f4a4fac5ca)
 
+*Interface* É tipo uma classe 'contrato', caso uma classe implemente uma interface, é necessario que essa classe sobrescreva todos os metodos da interface que esta implementando.
+Por padrão, todos as funções de uma Interface são public e abstract(não possuem escopo primariamente, mas quando é implementada, o escopo precisa ser construido).
+Por padrão, os atributos são final, ou seja, constantes.
+Quando uma interface cria novas funções, por padrão as classes que implementam essa interface são obrigadas a
+criar essas funções também, dessa forma podendo quebrar a aplicação.
+
+o modificador default serve para contornar esse possivel problema, ele cria uma função concreta, ao invés de uma abstrata
+dessa forma é possivel criar o escopo da função direto na interface, ao inves de deixar a cargo das classes que a implementam.
+Dessa forma as proximas classes podem apenas sobrescrever essa função default.
+![image](https://github.com/user-attachments/assets/483cc08c-1c2c-433e-a954-66f07657b18a)
 
 
